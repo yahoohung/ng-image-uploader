@@ -1,18 +1,21 @@
 {
-    "name": "ng-image-uploader",
-    "description": "An image upload, crop and resize, live time preview module in Angular.js",
-    "main": "image-uploader.js",
-    "authors": [
-        "Marshall Chan <yahoohung@gmail.com>"
-    ],
-    "license": "MIT",
-    "homepage": "https://github.com/yahoohung/ng-image-uploader",
-    "private": true,
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ]
+  "name": "ng-image-uploader",
+  "description": "An image upload, crop and resize, live time preview module in Angular.js",
+  "main": "image-uploader.js",
+  "authors": [
+    "Marshall Chan <yahoohung@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yahoohung/ng-image-uploader",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Croppie": "croppie#^2.4.0"
+  }
 }
