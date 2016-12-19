@@ -1,6 +1,6 @@
 {
     "name": "ng-image-uploader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An image upload, crop and resize, live time preview module in Angular.js",
     "main": "image-uploader.js",
     "scripts": {
