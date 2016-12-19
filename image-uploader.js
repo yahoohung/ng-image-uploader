@@ -123,7 +123,13 @@ angular.module('mcImageUploader', [])
                 }
 
                 var onChangeFunc = function($event) {
-                    var newfile = $event.originalEvent.path[0].files[0];
+                    var jQuery = window.jQuery;
+                    if (jQuery && jQuery.fn.on) {
+                        var newfile = $event.originalEvent.path[0].files[0];
+                    } else {
+                        var newfile = $event.path[0].files[0];
+                    }
+
                     if (typeof newfile !== 'undefined') {
                         var reader = new FileReader();
                         reader.readAsDataURL(newfile);
