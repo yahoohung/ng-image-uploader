@@ -1,5 +1,5 @@
 {
-    "name": "angular-image-uploader",
+    "name": "ng-image-uploader",
     "version": "1.0.0",
     "description": "An image upload, crop and resize, live time preview module in Angular.js",
     "main": "image-uploader.js",
@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yahoohung/angular-image-uploader.git"
+        "url": "https://github.com/yahoohung/ng-image-uploader.git"
     },
     "author": "Marshall Chan <yahoohung@gmail.com>",
     "license": "MIT",
