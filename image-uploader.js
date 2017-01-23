@@ -125,9 +125,10 @@ angular.module('mcImageUploader', [])
                 var onChangeFunc = function($event) {
                     var jQuery = window.jQuery;
                     if (jQuery && jQuery.fn.on) {
-                        var newfile = $event.originalEvent.path[0].files[0];
+                        var newfile = typeof $event.originalEvent.path !== 'undefined' ? $event.originalEvent.path[0].files[0] : $event.originalEvent.target.files[0];
                     } else {
                         var newfile = $event.path[0].files[0];
+                        var newfile = typeof $event.path !== 'undefined' ? $event.path[0].files[0] : $event.target.files[0];
                     }
 
                     // array with acceptable file types
