@@ -130,7 +130,9 @@ angular.module('mcImageUploader', [])
                         var newfile = $event.path[0].files[0];
                     }
 
-                    if (typeof newfile !== 'undefined') {
+                    // array with acceptable file types
+                    var accept = ['image/png', 'image/jpeg', 'image/pjpeg', 'image/bmp', 'image/gif', 'image/tiff'];
+                    if (typeof newfile !== 'undefined' && accept.indexOf(newfile.type) > -1) {
                         var reader = new FileReader();
                         reader.readAsDataURL(newfile);
                         reader.onload = function() {
@@ -138,6 +140,8 @@ angular.module('mcImageUploader', [])
                             loadCroppie(target, attrs.targetId, reader.result);
                             element.remove();
                         }
+                    } else {
+                        alert('File format not supported.')
                     }
                 };
 
